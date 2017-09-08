@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>深圳市坪山区国家税务局</title>
+</head>
+ <meta charset="utf-8" />
+ <link href="css/bootstrap.css" rel="stylesheet" />
+ <link href="css/index.css" rel="stylesheet" />
+  <script src="js/echarts.min.js"></script>
+  <script src="https://mengfei0053.github.io/easyMap-echarts/lib/jquery.min.js"></script>
+<body>
+    <div id="main" style="width: 1000px;height: 1000px"></div>
+</body>
+<script>
+  var chart = echarts.init(document.getElementById('main'));
+var mapjson = './js/guangdong.json';
+$.get(mapjson, function(data) {
+  alert(JSON.stringify(data));
+    var options = {
+        series: [{
+            type: 'map',
+            map: 'map',
+            //地图上地名样式，显示
+
+            label: {
+                normal: {
+                    show: true,
+                    textStyle: {
+                        color: '#fff'
+                    }
+                }
+            },
+            //地图区域样式
+            itemStyle: {
+                //普通样式
+                normal: {
+                    //地图样式颜色
+                    areaColor: '#2185FF'
+                },
+                //高亮时的样式，被选择的时的样式
+                emphasis: {
+                    // areaColor:'#58C7FF',
+                    shadowBlur: 10,
+                    shadowColor: 'rgba(0, 0, 0, 0.5)',
+                    shadowOffsetX: 0,
+                    shadowOffsetY: 0
+                }
+            }
+
+        }]
+    };
+    echarts.registerMap('map', data);
+    chart.setOption(options);
+
+});
+chart.on('mouseover', function(param) {
+    console.log(param)
+
+})
+chart.on('click', function(param) {
+
+})
+</script>
+</script>
+
+</html>

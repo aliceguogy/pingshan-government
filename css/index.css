@@ -1,0 +1,26 @@
+body{  background: #004BCF; color: #fff;}
+.tou{ width: 100%; height: 80px; text-align: center; color: #ECE87C;background: linear-gradient(#0060EA, #0040C1);}
+.tou h1{font-size: 50px;margin: 0;line-height: 80px;}
+.tou img{line-height: 80px;}
+.fenge{width: 100%;height: 20px;background: linear-gradient(#0060EA, #0040C1);text-align: center; }
+.zhibaio{text-align: center; }
+.sanjin{height: 66px; background: linear-gradient(#0060EA, #0040C1); margin: 5px 1.3%;}
+.sanjin_img{width: 40%; float: left;line-height: 66px}
+.sanjin_shuju{width: 60%;float: right;}
+.sanjin_shuju div{ line-height:33px; border-left:1px solid rgba(255, 255, 255, 0.18);}
+.wangge_diqu{width: 38%; height: 200px;float: left;}
+.shendu{width: 90%; height: 200px;background: linear-gradient(#0060EA, #0040C1); margin: auto;}
+.shendu_bing{width:40%;height: 200px;float: left; }
+.shendu_biao{width: 60%; height: 200px; float: left; }
+.wangge{width: 90%; background: linear-gradient(#0060EA, #0040C1); margin: auto; height: 210px; }
+.wangge_zhu{width: 50%; height: 210px;float: left;}
+.wangge_shu{width: 40%; height: 210px;float: left; padding: 10px;}
+.wangge_shu ul li{list-style-type:none; line-height: 25px;}
+.wangge p{margin: 0; text-align: center; padding-bottom: 10px; color: #fff;white-space:nowrap; text-overflow:ellipsis;
+overflow:hidden; }
+.zuo{float: left;width: 30%;}
+.you{float: right; width: 30%;}
+
+
+
+

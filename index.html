@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>深圳市坪山区国家税务局</title>
+</head>
+ <meta charset="utf-8" />
+ <link href="css/bootstrap.css" rel="stylesheet" />
+ <link href="css/index.css" rel="stylesheet" />
+ <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="js/echarts.min.js"></script>
+    <!-- <script src="js/index.js"></script> -->
+  <script src="js/qwe.js"></script>
+<body>
+<div>
+	<div class="tou">
+	<h1><img src="img/guowei.png" alt="" width="55"> 深圳市坪山区国家税务局</h1>
+	</div>
+
+<div class="fenge"><p>金税三期</p></div>
+
+
+	<div class="container" style="width: 90%;">
+	<div class="row zhibaio">
+		<div class="zuo">
+			<div class="sanjin">
+				<div class="sanjin_img">
+					<img src="img/yonghu.png" width="54">
+				</div>
+				<div class="sanjin_shuju">
+					<div style=" border-bottom: 1px solid rgba(255, 255, 255, 0.18);">
+						用户登记总数
+					</div>
+					<div>
+						<strong id="allCountNum">0</strong>
+					</div>
+				</div>
+			</div>
+			<div class="sanjin">
+				<div class="sanjin_img">
+					<img src="img/dengji.png" width="54">
+				</div>
+				<div class="sanjin_shuju">
+					<div style="border-bottom: 1px solid rgba(255, 255, 255, 0.18);">
+						营改增登记户数
+					</div>
+					<div>
+						<strong id="ygzCountNum">0</strong>
+					</div>
+				</div>
+			</div>
+			<div class="sanjin">
+				<div class="sanjin_img">
+					<img src="img/kaihu.png" width="54">
+				</div>
+				<div class="sanjin_shuju">
+					<div style=" border-bottom: 1px solid rgba(255, 255, 255, 0.18);">
+						新开户（月）
+					</div>
+					<div>
+						<strong id="openCountNum">0</strong>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="wangge_diqu">
+			<img src="./img/ps.png" height="210" >
+		</div>
+		<div class="you">
+			<div class="sanjin">
+				<div class="sanjin_img">
+					<img src="img/zhuxiao.png" width="54">
+				</div>
+				<div class="sanjin_shuju">
+					<div style="border-bottom: 1px solid rgba(255, 255, 255, 0.18);">
+						非正常总户数
+					</div>
+					<div>
+						<strong id="abnormalCountNum">0</strong>
+					</div>
+				</div>
+			</div>
+			<div class="sanjin">
+				<div class="sanjin_img">
+					<img src="img/feidengji.png" width="54">
+				</div>
+				<div class="sanjin_shuju">
+					<div style=" border-bottom: 1px solid rgba(255, 255, 255, 0.18);">
+						营改非正常增登记户数
+					</div>
+					<div>
+						<strong id="ygzAbnormalCountNum">0</strong>
+					</div>
+				</div>
+			</div>
+			<div class="sanjin">
+				<div class="sanjin_img">
+					<img src="img/zhuxiao.png" width="54">
+				</div>
+				<div class="sanjin_shuju">
+					<div style="border-bottom: 1px solid rgba(255, 255, 255, 0.18);">
+						注销（月）
+					</div>
+					<div>
+						<strong id="closeCountNum">0</strong>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+		
+
+
+
+<div class="fenge"><p>申报进度</p></div>
+	<div class="shendu">
+		<div class="shendu_bing" id="shendu_bing"></div>
+
+        <div class="shendu_biao">
+					<table class="table table-condensed">
+						<thead>
+							<tr>
+								<th>税务机关</th>
+								<th>应申报户数</th>
+								<th>已申报户数</th>
+								<th>未申报户数</th>
+								<th>网报户数</th>
+								<th>当日网报户数</th>
+								<th>申报率</th>
+								<th>网报率</th>
+								
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>税源管理一科</td>
+								<td>0</td>
+								<td>0</td>
+								<td>10</td>
+								<td>0</td>
+								<td>10</td>
+								<td>0</td>
+								<td>0</td>
+								
+							</tr>
+							<tr>
+								<td>税源管理二科</td>
+								<td>0</td>
+								<td>10</td>
+								<td>0</td>
+								<td>10</td>
+								<td>0</td>
+								<td>0</td>
+								<td>0</td>
+								
+							</tr>
+							<tr>
+								<td>税源管理三科</td>
+								<td>0</td>
+								<td>10</td>
+								<td>0</td>
+								<td>0</td>
+								<td>10</td>
+								<td>0</td>
+								<td>0</td>
+								
+							</tr>
+							
+						</tbody>
+						</table>
+        </div>
+	</div>
+<div class="fenge"><p>网格数据</p></div>
+
+			<div class="wangge">
+	
+			<div class="wangge_zhu" id="wangge_zhu">
+				
+			</div>
+			<div class="wangge_shu">
+				<p>坪山网格系统覆盖坪山辖区<strong>6</strong>个街道，<strong>24</strong>个社区，累计覆盖<strong>10280</strong>个企业</p>
+			<ul>
+			<li>坪山街道办网格化企业更新<strong>2179</strong>户，合计<strong>2179</strong>户</li>
+			<li>碧岭街道办网格化企业更新<strong>1317</strong>户，合计<strong>1317</strong>户</li>
+			<li>马峦街道办网格化企业更新<strong>1209</strong>户，合计<strong>1209</strong>户</li>
+			<li>石井街道办网格化企业更新<strong>711</strong>户，合计<strong>711</strong>户</li>
+			<li>龙田街道办网格化企业更新<strong>1741</strong>户，合计<strong>2179</strong>户</li>
+			<li>坑梓街道办网格化企业更新<strong>2424</strong>户，合计<strong>2424</strong>户</li>
+
+			</ul>
+		
+			</div>
+
+			</div>
+			</div>
+</body>
+ <script type="text/javascript">
+
+
+// getMsgNum();
+// qwe();
+api();
+// 三秒执行一次
+setInterval(function(){
+api();
+
+
+$('strong').each(function () {
+    $(this).prop('Counter',10).animate({
+        Counter: $(this).text()
+    }, {
+        duration: 500,
+        easing: 'swing',
+        step: function (now) {
+            $(this).text(Math.ceil(now));
+        }
+    });
+});
+
+
+},3000)
+
+// function getMsgNum(){
+//     $.ajax({
+//           url: "http://192.168.2.29/%E5%9D%AA%E5%B1%B1/js/xianggang.json",
+//           dataType: "json",
+//           type:"GET",
+         
+//         success:function(res){
+//             $("#abnormalCountNum").html(res.abnormalCountNum);
+//             $("#allCountNum").html(res.allCountNum);
+//             $("#closeCountNum").html(res.closeCountNum);
+//             $("#openCountNum").html(res.openCountNum);
+//             $("#ygzAbnormalCountNum").html(res.ygzAbnormalCountNum);
+//             $("#ygzCountNum").html(res.ygzCountNum);
+//             if(textStatus == "success"){
+//                                     //成功之后，再发送请求，递归调用
+//                 getMsgNum();
+//             }
+//         },
+//         error:function(XMLHttpRequest, textStatus, errorThrown){
+//             if(textStatus == "timeout"){
+//                                     //有效时间内没有响应，请求超时，重新发请求
+//                 getMsgNum();
+//             }else{
+//                                     // 其他的错误，如网络错误等
+//                 getMsgNum();
+//             }
+//         }
+//     });
+// }
+
+
+
+
+    </script>
+
+
+
+</html>
